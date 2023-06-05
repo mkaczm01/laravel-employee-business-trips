@@ -1,0 +1,21 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+
+    paths:
+        - app/
+        - ../BusinessTrip
+        - ../Contracts
+        - ../Employee
+        - ../UseCases
+
+    # Level 9 is the highest level
+    level: 7
+
+    excludePaths:
+        - ./tests
+
+    checkMissingIterableValueType: false
+
+    checkGenericClassInNonGenericObjectType: false
